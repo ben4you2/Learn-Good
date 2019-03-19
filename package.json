@@ -1,0 +1,19 @@
+{
+  "name": "learn-good",
+  "version": "1.0.0",
+  "description": "Learning new things is always a passion.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ben4you2/Learn-Good.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ben4you2/Learn-Good/issues"
+  },
+  "homepage": "https://github.com/ben4you2/Learn-Good#readme"
+}
