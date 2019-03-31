@@ -12,9 +12,12 @@ body{
 body> p{
 
 	margin: 35px;
-	padding: 2px;
-	
-	
+	padding: 2px;	
+}
+
+.container {
+
+	margin: 150px 350px 0px 320px;
 }
 
 h1{
