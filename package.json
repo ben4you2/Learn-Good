@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ben4you2/Learn-Good/issues"
   },
-  "homepage": "https://github.com/ben4you2/Learn-Good#readme"
+  "homepage": "https://github.com/ben4you2/Learn-Good#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {}
 }
