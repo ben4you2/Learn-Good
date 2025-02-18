@@ -1,0 +1,41 @@
+/*body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  max-width: 400px;
+  margin: auto;
+}
+
+#lottery-number {
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #dc3545;
+}*/
+
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  max-width: 400px;
+  margin: auto;
+}
+
+#lottery-number {
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #dc3545;
+  transition: transform 0.3s ease-in-out;
+}
+.container{
+  background-color:transparent; 
+}
+
+  .mt-4{
+    background-color:#56EA68;
+  }
+
+#lottery-number.animate {
+  transform: scale(1.2);
+}
