@@ -41,6 +41,29 @@
     <link rel="stylesheet" href="styles.css">
     
     <style>
+            :root {
+          --gradient-1: #2c3e50;
+          --gradient-2: #3498db;
+          --accent-color: #e74c3c;
+          --color: #25ef53;
+        }
+        
+         body {
+            background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2),var(--accent-color));
+            min-height: 100vh;
+            color: white;
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+        }
+        
+        
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
       .mt-4{
         background-color:lightgray; 
       }
@@ -57,13 +80,13 @@
         </div>
 
         <!-- Previous Numbers -->
-        <div class="mt-4">
+        <div class="card p-4 mt-4">
             <h3>Previous Numbers</h3>
             <ul id="previous-numbers" class="list-group"></ul>
         </div>
 
         <!-- Frequency Analysis -->
-        <div class="mt-4">
+        <div class="card p-4 mt-4">
             <h3>Frequency Analysis</h3>
             <table class="table table-bordered">
                 <thead>
@@ -75,9 +98,17 @@
                 <tbody id="frequency-table"></tbody>
             </table>
         </div>
+        
+        
+        <footer class="text-center mt-5 opacity-75">
+            <small>🔮 Luck is what happens when preparation meets opportunity 🔮</small>
+            <small>
+              <p class="icon">🍩  🎀  𝒩𝓊𝓂𝒷𝑒𝓇 𝒻🏵𝓃𝓉  🎀  🍩</p>
+            </small>
+        </footer>
     </div>
     
-         <p class="icon">🍩  🎀  𝒩𝓊𝓂𝒷𝑒𝓇 𝒻🏵𝓃𝓉  🎀  🍩</p>
+
 <br>
     <audio id="sound" src="/da25ab4555b846a5834d65f46a5d9fcf.mov"></audio>
     <script src="script.js"></script>
