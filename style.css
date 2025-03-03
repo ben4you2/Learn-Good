@@ -39,3 +39,8 @@ body {
 #lottery-number.animate {
   transform: scale(1.2);
 }
+
+.icon{
+  margin-left:250px;
+  bottom:140px;
+}
