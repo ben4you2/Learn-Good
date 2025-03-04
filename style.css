@@ -1,21 +1,30 @@
 
-document.addEventListener('DOMContentLoaded', () => {
-    const sensorStatus = document.getElementById('sensor-status');
-    const proximityAlert = document.getElementById('proximity-alert');
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
 
-    // Simulate sensor activation
-    sensorStatus.textContent = 'Sensor Status: Active';
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
 
-    // Simulate proximity detection
-    setInterval(() => {
-        let detected = Math.random() > 0.5; // Random detection
-        if (detected) {
-            proximityAlert.textContent = 'Threat detected!';
-            proximityAlert.classList.add('alert');
-        } else {
-            proximityAlert.textContent = 'No threat detected';
-            proximityAlert.classList.remove('alert');
-        }
-    }, 2000);
-});
+#sensor-status {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
 
+#proximity-alert {
+    font-size: 1.2em;
+    color: green;
+}
+
+.alert {
+    color: red;
+    font-weight: bold;
+}
