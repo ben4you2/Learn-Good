@@ -28,3 +28,17 @@ body {
     color: red;
     font-weight: bold;
 }
+
+@media (max-width: 600px) {
+    .logo img {
+        width: 50px;
+    }
+
+    #sensor-status {
+        font-size: 1.2em;
+    }
+
+    #proximity-alert {
+        font-size: 1em;
+    }
+}
