@@ -1,95 +1,21 @@
 
-*{
-	margin: 0;
-	padding: 0;
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const sensorStatus = document.getElementById('sensor-status');
+    const proximityAlert = document.getElementById('proximity-alert');
 
-body{
+    // Simulate sensor activation
+    sensorStatus.textContent = 'Sensor Status: Active';
 
-	background-color: #fff;
-
-}
-body> p{
-
-	margin: 35px;
-	padding: 2px;	
-}
-
-.container {
-
-	margin: 150px 350px 0px 320px;
-}
-
-h1{
-	margin: 30px;
-	padding: 1px;
-}
-
-.header{
-	height: 80px;
-	background:darkgray;
-}
-
-.navbar{
-   
-   
-   font-family: arial;
-   font-size: 20px;
-}
-
-.navbar ul{
-	margin-left: 50px;
-	text-decoration: none;
-}
-
- .navbar ul li{
-
- 	display: inline-block;
- 	margin: 20px;
- 	text-decoration: none;
- }
-
- .navbar ul li a{
-
- 	text-decoration: none;
- 	color:#000;
- 	
- }
-
- .navbar ul li a:hover{
-    color:#fff;
-    text-align: center; 
-    text-decoration: none;
-}
-
- footer > p {
-
- 	text-decoration: none;
- 	text-align: center;
- 	margin-top: 40px;
-
- }
-
-footer{
-
-	
-    background:gray;
-    padding: 2px;
-    height: 80px;
-    margin-top: 500px;
-
-    
-}
-
-
-@media  screen and (max-width: 600px){
-
-
-	.navbar ul li a{
-
-		font-size: 0.7em;
-		padding: 0;
-
-	}
-}
+    // Simulate proximity detection
+    setInterval(() => {
+        let detected = Math.random() > 0.5; // Random detection
+        if (detected) {
+            proximityAlert.textContent = 'Threat detected!';
+            proximityAlert.classList.add('alert');
+        } else {
+            proximityAlert.textContent = 'No threat detected';
+            proximityAlert.classList.remove('alert');
+        }
+    }, 2000);
+});
 
