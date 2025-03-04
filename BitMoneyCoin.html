@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Profit Guide</title>
+    <style>
+        :root {
+            --primary-color: #f7931a;
+            --dark-color: #1a1a1a;
+            --light-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: var(--light-color);
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        /* Content Sections */
+        .method-section {
+            display: none;
+            padding: 2rem 0;
+        }
+
+        .method-section.active {
+            display: block;
+        }
+
+        .method-card {
+            background: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .method-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* Security Tips */
+        .security-tips {
+            background: #2a2a2a;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .method-card {
+                padding: 15px;
+            }
+        }
+
+        .notification-bar {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: none;
+        }
+    </style>
+    
+    <!-- Add this CSS after the existing styles -->
+<style>
+  /* New Styles */
+  .earnings-tracker {
+    background: #2a2a2a;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  #transactionsList {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 15px;
+  }
+  
+  .transaction-item {
+    background: #3a3a3a;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-earning-form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  input[type="number"],
+  select {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    background: #3a3a3a;
+    border: 1px solid #4a4a4a;
+    color: white;
+  }
+  
+  button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .dashboard-card {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+    <header class="header">
+        <h1>Bitcoin Profit Guide</h1>
+        <p>Secure Ways to Earn Bitcoin Online</p>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="#trading" class="nav-link active">Trading</a></li>
+            <li><a href="#mining" class="nav-link">Mining</a></li>
+            <li><a href="#affiliate" class="nav-link">Affiliate Programs</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Trading Section -->
+        <section id="trading" class="method-section active">
+            <div class="method-card">
+                <h3>Bitcoin Trading</h3>
+                <p>Learn how to trade Bitcoin safely on reputable exchanges:</p>
+                <ul>
+                    <li>Choose regulated exchanges</li>
+                    <li>Use stop-loss orders</li>
+                    <li>Follow market trends</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Mining Section -->
+        <section id="mining" class="method-section">
+            <div class="method-card">
+                <h3>Bitcoin Mining</h3>
+                <p>Participate in mining pools for consistent earnings:</p>
+                <ul>
+                    <li>Join established mining pools</li>
+                    <li>Consider cloud mining options</li>
+                    <li>Monitor electricity costs</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Affiliate Section -->
+        <section id="affiliate" class="method-section">
+            <div class="method-card">
+                <h3>Affiliate Programs</h3>
+                <p>Earn Bitcoin by promoting crypto services:</p>
+                <ul>
+                    <li>Sign up for exchange affiliate programs</li>
+                    <li>Promote wallet services</li>
+                    <li>Use tracking links</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="security-tips">
+            <h3>Security Best Practices</h3>
+            <p id="securityTip">Loading security tips...</p>
+        </div>
+        
+        <div class="container">
+  <!-- Add this new section below security tips--> 
+  <div class="earnings-tracker">
+    <h3>💰 Earnings Tracker</h3>
+    <div class="dashboard">
+      <div class="dashboard-card">
+        <h4>Total Earnings</h4>
+        <p id="totalEarnings">0 BTC</p>
+      </div>
+      <div class="dashboard-card">
+        <h4>Recent Transactions</h4>
+        <p id="recentActivity">0 Transactions</p>
+      </div>
+    </div>
+    
+    <div class="add-earning-form">
+      <h4>Add New Earnings</h4>
+      <div class="form-group">
+        <input type="number" id="earningAmount" step="0.000001" placeholder="BTC Amount">
+      </div>
+      <div class="form-group">
+        <select id="earningType">
+          <option value="trading">Trading</option>
+          <option value="mining">Mining</option>
+          <option value="affiliate">Affiliate</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <button onclick="addEarning()">Add Earnings</button>
+    </div>
+    
+    <div id="transactionsList"></div>
+  </div>
+</div>
+    </div>
+
+    <div class="notification-bar" id="notificationBar">
+        🔒 Always use two-factor authentication!
+    </div>
+
+    <script>
+        // Tab Navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                document.querySelectorAll('.method-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.querySelector(targetId).classList.add('active');
+                
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+
+        // Security Tips Rotator
+        const securityTips = [
+            "Never share your private keys with anyone",
+            "Use hardware wallets for large amounts",
+            "Always verify wallet addresses",
+            "Enable 2FA on all exchanges",
+            "Regularly update your security software"
+        ];
+
+        let tipIndex = 0;
+        function rotateSecurityTip() {
+            document.getElementById('securityTip').textContent = securityTips[tipIndex];
+            tipIndex = (tipIndex + 1) % securityTips.length;
+        }
+        setInterval(rotateSecurityTip, 5000);
+
+        // Show Notification
+        function showNotification() {
+            const notification = document.getElementById('notificationBar');
+            notification.style.display = 'block';
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 5000);
+        }
+        setInterval(showNotification, 15000);
+
+        // Initial call
+        rotateSecurityTip();
+        showNotification();
+        
+        
+        
+/**  <script>
+
+**/
+  // Earnings Tracker System
+  let transactions = JSON.parse(localStorage.getItem('btcTransactions')) || [];
+  let totalEarnings = 0;
+  
+  function updateEarningsDisplay() {
+    // Calculate totals
+    totalEarnings = transactions.reduce((sum, t) => sum + t.amount, 0);
+    
+    // Update UI
+    document.getElementById('totalEarnings').textContent =
+      `${totalEarnings.toFixed(6)} BTC`;
+    document.getElementById('recentActivity').textContent =
+      `${transactions.length} Transactions`;
+    
+    // Update transactions list
+    const transactionsList = document.getElementById('transactionsList');
+    transactionsList.innerHTML = transactions.slice(-5).reverse().map(t => `
+            <div class="transaction-item">
+                <span>${t.type.toUpperCase()}</span>
+                <span>+${t.amount.toFixed(6)} BTC</span>
+                <span>${new Date(t.date).toLocaleDateString()}</span>
+            </div>
+        `).join('');
+    
+    // Save to localStorage
+    localStorage.setItem('btcTransactions', JSON.stringify(transactions));
+  }
+  
+  function addEarning() {
+    const amount = parseFloat(document.getElementById('earningAmount').value);
+    const type = document.getElementById('earningType').value;
+    
+    if (!amount || amount <= 0) {
+      alert('Please enter a valid amount');
+      return;
+    }
+    
+    transactions.push({
+      amount,
+      type,
+      date: new Date().toISOString()
+    });
+    
+    // Show notification
+    showCustomNotification(`🎉 New earning added: ${amount.toFixed(6)} BTC from ${type}`);
+    updateEarningsDisplay();
+    
+    // Clear input
+    document.getElementById('earningAmount').value = '';
+  }
+  
+  // Simulated Earnings Alerts
+  function simulateRandomEarning() {
+    if (Math.random() < 0.3) { // 30% chance every 10 seconds
+      const fakeAmount = Math.random() * 0.001;
+      const types = ['trading', 'mining', 'affiliate'];
+      const type = types[Math.floor(Math.random() * types.length)];
+      
+      transactions.push({
+        amount: fakeAmount,
+        type,
+        date: new Date().toISOString()
+      });
+      
+      showCustomNotification(`🎉 Simulated earning: ${fakeAmount.toFixed(6)} BTC from ${type}`);
+      updateEarningsDisplay();
+    }
+  }
+  
+  function showCustomNotification(message) {
+    const notification = document.getElementById('notificationBar');
+    notification.textContent = message;
+    notification.style.display = 'block';
+    setTimeout(() => {
+      notification.style.display = 'none';
+    }, 5000);
+    
+    // Browser notification
+    if (Notification.permission === 'granted') {
+      new Notification('New Bitcoin Earning!', {
+        body: message
+      });
+    }
+  }
+  
+  // Request notification permission
+  if (Notification.permission !== 'denied') {
+    Notification.requestPermission();
+  }
+  
+  // Initialize
+  updateEarningsDisplay();
+  setInterval(simulateRandomEarning, 10000); // Simulate every 10 seconds
+  
+  
+
+  </script>
+        
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- 
+
+<!-- Add this CSS after the existing styles 
+<style>
+  /* New Styles */
+  .earnings-tracker {
+    background: #2a2a2a;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  #transactionsList {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 15px;
+  }
+  
+  .transaction-item {
+    background: #3a3a3a;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-earning-form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  input[type="number"],
+  select {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    background: #3a3a3a;
+    border: 1px solid #4a4a4a;
+    color: white;
+  }
+  
+  button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .dashboard-card {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+</style>
+
+<!-- Add this HTML before the closing </div> of container 
+<div class="container">
+  <!-- Add this new section below security tips 
+  <div class="earnings-tracker">
+    <h3>💰 Earnings Tracker</h3>
+    <div class="dashboard">
+      <div class="dashboard-card">
+        <h4>Total Earnings</h4>
+        <p id="totalEarnings">0 BTC</p>
+      </div>
+      <div class="dashboard-card">
+        <h4>Recent Transactions</h4>
+        <p id="recentActivity">0 Transactions</p>
+      </div>
+    </div>
+    
+    <div class="add-earning-form">
+      <h4>Add New Earnings</h4>
+      <div class="form-group">
+        <input type="number" id="earningAmount" step="0.000001" placeholder="BTC Amount">
+      </div>
+      <div class="form-group">
+        <select id="earningType">
+          <option value="trading">Trading</option>
+          <option value="mining">Mining</option>
+          <option value="affiliate">Affiliate</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <button onclick="addEarning()">Add Earnings</button>
+    </div>
+    
+    <div id="transactionsList"></div>
+  </div>
+</div>
+
+<!-- Add this JavaScript before closing </script> tag 
+<script>
+  // Earnings Tracker System
+  let transactions = JSON.parse(localStorage.getItem('btcTransactions')) || [];
+  let totalEarnings = 0;
+  
+  function updateEarningsDisplay() {
+    // Calculate totals
+    totalEarnings = transactions.reduce((sum, t) => sum + t.amount, 0);
+    
+    // Update UI
+    document.getElementById('totalEarnings').textContent =
+      `${totalEarnings.toFixed(6)} BTC`;
+    document.getElementById('recentActivity').textContent =
+      `${transactions.length} Transactions`;
+    
+    // Update transactions list
+    const transactionsList = document.getElementById('transactionsList');
+    transactionsList.innerHTML = transactions.slice(-5).reverse().map(t => `
+            <div class="transaction-item">
+                <span>${t.type.toUpperCase()}</span>
+                <span>+${t.amount.toFixed(6)} BTC</span>
+                <span>${new Date(t.date).toLocaleDateString()}</span>
+            </div>
+        `).join('');
+    
+    // Save to localStorage
+    localStorage.setItem('btcTransactions', JSON.stringify(transactions));
+  }
+  
+  function addEarning() {
+    const amount = parseFloat(document.getElementById('earningAmount').value);
+    const type = document.getElementById('earningType').value;
+    
+    if (!amount || amount <= 0) {
+      alert('Please enter a valid amount');
+      return;
+    }
+    
+    transactions.push({
+      amount,
+      type,
+      date: new Date().toISOString()
+    });
+    
+    // Show notification
+    showCustomNotification(`🎉 New earning added: ${amount.toFixed(6)} BTC from ${type}`);
+    updateEarningsDisplay();
+    
+    // Clear input
+    document.getElementById('earningAmount').value = '';
+  }
+  
+  // Simulated Earnings Alerts
+  function simulateRandomEarning() {
+    if (Math.random() < 0.3) { // 30% chance every 10 seconds
+      const fakeAmount = Math.random() * 0.001;
+      const types = ['trading', 'mining', 'affiliate'];
+      const type = types[Math.floor(Math.random() * types.length)];
+      
+      transactions.push({
+        amount: fakeAmount,
+        type,
+        date: new Date().toISOString()
+      });
+      
+      showCustomNotification(`🎉 Simulated earning: ${fakeAmount.toFixed(6)} BTC from ${type}`);
+      updateEarningsDisplay();
+    }
+  }
+  
+  function showCustomNotification(message) {
+    const notification = document.getElementById('notificationBar');
+    notification.textContent = message;
+    notification.style.display = 'block';
+    setTimeout(() => {
+      notification.style.display = 'none';
+    }, 5000);
+    
+    // Browser notification
+    if (Notification.permission === 'granted') {
+      new Notification('New Bitcoin Earning!', {
+        body: message
+      });
+    }
+  }
+  
+  // Request notification permission
+  if (Notification.permission !== 'denied') {
+    Notification.requestPermission();
+  }
+  
+  // Initialize
+  updateEarningsDisplay();
+  setInterval(simulateRandomEarning, 10000); // Simulate every 10 seconds
+</script>
+
+-->
+
