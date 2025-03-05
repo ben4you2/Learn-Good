@@ -168,13 +168,19 @@
         }
 
         function toggleMode() {
-            let body = document.body;
-            if (body.style.backgroundColor === "white") {
-                body.style.backgroundColor = "#1a1a1a";
-                body.style.color = "white";
+         let body = document.body;
+         let cont = document.body;
+         let conver = document.body;
+         
+        if (body.style.backgroundColor === "white") {
+         body.style.backgroundColor = "#1a1a1a";
+        body.style.color = "white";
             } else {
                 body.style.backgroundColor = "white";
-                body.style.color = "black";
+                 body.style.color = "black";
+                 conver.style.color="white";
+                 cont.style.color="white";
+                 conver.style.color="white";
             }
         }
 
