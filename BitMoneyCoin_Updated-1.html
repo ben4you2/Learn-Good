@@ -116,7 +116,128 @@
             margin: 20px 0;
         }
         
+            <style>
+        :root {
+            --primary-color: #f7931a;
+            --dark-color: #1a1a1a;
+            --light-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: var(--light-color);
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        /* Content Sections */
+        .method-section {
+            display: none;
+            padding: 2rem 0;
+        }
+
+        .method-section.active {
+            display: block;
+        }
+
+        .method-card {
+            background: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .method-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* Security Tips */
+        .security-tips {
+            background: #2a2a2a;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .method-card {
+                padding: 15px;
+            }
+        }
+
+        .notification-bar {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: none;
+        }
+        
+        
+        
     </style>
+    
+    
+    
+    
+    
+    
 </head>
 <body>
 
@@ -145,6 +266,101 @@
             <h3>Latest Crypto News</h3>
             <ul id="newsList">Loading...</ul>
         </div>
+        <!--More
+        features about the trading factors-->
+            <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#trading" class="nav-link active">Trading</a></li>
+        <li><a href="#mining" class="nav-link">Mining</a></li>
+        <li><a href="#affiliate" class="nav-link">Affiliate Programs</a></li>
+      </ul>
+    </nav>
+    
+    <div class="container">
+      <!-- Trading Section -->
+      <section id="trading" class="method-section active">
+        <div class="method-card">
+          <h3>Bitcoin Trading</h3>
+          <p>Learn how to trade Bitcoin safely on reputable exchanges:</p>
+          <ul>
+            <li>Choose regulated exchanges</li>
+            <li>Use stop-loss orders</li>
+            <li>Follow market trends</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- Mining Section -->
+      <section id="mining" class="method-section">
+        <div class="method-card">
+          <h3>Bitcoin Mining</h3>
+          <p>Participate in mining pools for consistent earnings:</p>
+          <ul>
+            <li>Join established mining pools</li>
+            <li>Consider cloud mining options</li>
+            <li>Monitor electricity costs</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- Affiliate Section -->
+      <section id="affiliate" class="method-section">
+        <div class="method-card">
+          <h3>Affiliate Programs</h3>
+          <p>Earn Bitcoin by promoting crypto services:</p>
+          <ul>
+            <li>Sign up for exchange affiliate programs</li>
+            <li>Promote wallet services</li>
+            <li>Use tracking links</li>
+          </ul>
+        </div>
+      </section>
+      
+      <div class="security-tips">
+        <h3>Security Best Practices</h3>
+        <p id="securityTip">Loading security tips...</p>
+      </div>
+      
+      <div class="container">
+        <!-- Add this new section below security tips-->
+        <div class="earnings-tracker">
+          <h3>💰 Earnings Tracker</h3>
+          <div class="dashboard">
+            <div class="dashboard-card">
+              <h4>Total Earnings</h4>
+              <p id="totalEarnings">0 BTC</p>
+            </div>
+            <div class="dashboard-card">
+              <h4>Recent Transactions</h4>
+              <p id="recentActivity">0 Transactions</p>
+            </div>
+          </div>
+          
+          <div class="add-earning-form">
+            <h4>Add New Earnings</h4>
+            <div class="form-group">
+              <input type="number" id="earningAmount" step="0.000001" placeholder="BTC Amount">
+            </div>
+            <div class="form-group">
+              <select id="earningType">
+                <option value="trading">Trading</option>
+                <option value="mining">Mining</option>
+                <option value="affiliate">Affiliate</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <button onclick="addEarning()">Add Earnings</button>
+          </div>
+          
+          <div id="transactionsList"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="notification-bar" id="notificationBar">
+      🔒 Always use two-factor authentication!
+    </div>
+        
     </div>
 
     <script>
