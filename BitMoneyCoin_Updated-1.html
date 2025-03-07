@@ -70,7 +70,7 @@
             border-radius: 5px;
             color: white;
         }
-        #converter{
+        #converter , #earNing{
           right:20;
           padding:10px;
           position: absolute;
@@ -80,6 +80,10 @@
           border-radius:5px;
           color:white;
         }
+        #earNing{
+          margin-bottom:240px;
+        }
+        
 
         /* Crypto Price Tracker */
         .crypto-price {
@@ -349,7 +353,7 @@
                 <option value="other">Other</option>
               </select>
             </div>
-            <button onclick="addEarning()">Add Earnings</button>
+            <button onclick="addEarning()" id="earNing">Add Earnings</button>
           </div>
           
           <div id="transactionsList"></div>
@@ -399,6 +403,8 @@
          let body = document.body;
          let cont = document.body;
          let conver = document.body;
+         let earning = document.body;
+         
          
         if (body.style.backgroundColor === "white") {
          body.style.backgroundColor = "#1a1a1a";
@@ -408,6 +414,7 @@
                  body.style.color = "black";
                  conver.style.color="white";
                  cont.style.color="white";
+                 earning.style.color="black";
                  
             }
         }
