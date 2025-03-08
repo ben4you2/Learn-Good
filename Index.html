@@ -36,6 +36,8 @@
             background-color: var(--primary-color);
             padding: 1rem;
             text-align: center;
+            padding:47px;
+            
         }
 
         /* Navigation */
@@ -65,16 +67,17 @@
     
     .mode-toggle {
         position: absolute;
-        top: 15px;
-        right: 10px;
+        top:2px;
+        right:2px;
         cursor: pointer;
         background: linear-gradient(45deg, #f7931a, #f9a825);
         padding: 10px 20px;
+        margin:10px;
         border: none;
         border-radius: 25px;
         color: white;
         font-size: 16px;
-        transition: background 0.3s, transform 0.3s;
+       transition: background 0.3s, transform 0.3s;
     }
 
     .mode-toggle:hover {
@@ -122,11 +125,22 @@
 
         /* Crypto Price Tracker */
         .crypto-price {
-            text-align: center;
+            text-align: initial;
             margin: 20px 0;
             padding: 10px;
-            background: #2a2a2a;
+          /*  background: #2a2a2a;*/
             border-radius: 10px;
+            text-decoration:underline;
+            background-color: #fff;
+            color:#000;
+        }
+        
+        .crypto-price:visited{
+          color:#734;
+        }
+        .crypto-price li{
+          text-decoration: none;
+          color:#000;
         }
 
         /* Crypto Converter */
@@ -161,9 +175,12 @@
           display:block;
           text-decoration:none;
         }
-        .crypto-price{
-          transform: translateX(1s);
+        #converter{
+          display:inline-block;
+          margin:10px;
+          margin-bottom:10px;
         }
+        
         
     </style>
     <!--
@@ -312,22 +329,34 @@
          
          <div class="converter">
            <ul class="crypto-price">
-             <li>Transactions</li>
-             <li>Trading in Buying items</li>
-             <li>Protction on transactions</li>
+            <a href="#"><li>Transactions</li></a>
+            <a href=""><li>Trading in Buying items</li></a>
+            <a href="#"><li>Protction on transactions</li></a>
            </ul>
            
            <h3>Protocols</h3>
            <p>This is about the protocol of the bitcoin and a way tou can uae to make tour trade become more ifficient</p>
          </div>
         
-        
-      
-
         <div class="news-feed">
             <h3>Latest Crypto News</h3>
             <ul id="newsList">Loading...</ul>
         </div>
+        
+        <p>
+          The work about winning or controling expenses.
+        </p>
+        <h3>Win</h3>
+        <ul class="crypto-price">
+          <a href="#"><li>Protection</li></a>
+          <a href="#"><li>Grpm</li></a>
+          <a href="#"><li>Lorem</li></a>
+        </ul>
+        
+      <div style="margin:23px"> <button class="converter">Transactions</button>
+        <button class="converter">Trades</button><br>
+        <button class="converter">Values</button></div>
+        
     </div>
 
     <script>
