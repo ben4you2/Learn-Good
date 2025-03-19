@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,4 +14,1420 @@
     <div id="proximity-alert">No threat detected</div>
     <script src="script.js"></script>
 </body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--cdn libraries--> 
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <script type="text/javascript" src="cdn_modules/ionicons@7.4.0/esm/ionicons.min.js"></script>
+  <script type="text/javascript" src="cdn_modules/devicons@1.8.0/css/devicons.min.css"></script>
+  <script type="text/javascript" src="cdn_modules/web3@4.16.0/web3.min.js"></script>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Ionic Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Menu</title>
+</head>
+
+<body>
+  <ion-app>
+    <ion-tabs>
+      
+     <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="tab1">
+          <ion-icon name="planet"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="tab2">
+          <ion-icon name="information-circle"></ion-icon>
+          <ion-label>Info</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="tab3">
+          <ion-icon name="cog"></ion-icon>
+          <ion-label>Settings</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="tab4">
+          <ion-icon name="lock-closed"></ion-icon>
+          <ion-label>Protection</ion-label>
+        </ion-tab-button>
+        
+        <ion-tab-button tab="tab5">
+          <ion-icon name="hardware-chip"></ion-icon>
+          <ion-label>
+            Programs
+          </ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    <!--
+            <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="tab1">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="tab2">
+          <ion-icon name="information-circle"></ion-icon>
+          <ion-label>Info</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="tab3">
+          <ion-icon name="settings"></ion-icon>
+          <ion-label>Settings</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="tab4">
+          <ion-icon name="Protection"></ion-icon>
+          <ion-label>Protection</ion-label>
+        </ion-tab-button>
+         <ion-tab-button tab="tab5">
+          <ion-icon name="Program"></ion-icon>
+          <ion-label>
+            Programning
+          </ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+      
+      <ion-tab tab="tab1">
+        <ion-header>
+          <ion-toolbar>
+            <ion-menu content-id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">This is the menu content.</ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
+</div>
+            
+          </ion-toolbar>
+        </ion-header>
+      </ion-tab-bar>-->
+      <ion-menu content-id="main-content">
+  <ion-header color="primary">
+    <ion-toolbar>
+      <ion-title>Ben4you Tech</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+  <div>
+    <ion-list>
+  <ion-list-header>
+    <ion-label><a href="/menu.html">Applications & Services</a></ion-label>
+    <ion-button>See All</ion-button>
+  </ion-list-header>
+  <ion-item>
+    <ion-label>Hosting and Cloud</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Networking & Computer Newtwork</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Applications and Web</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Computer and Virtual</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Programming and Science</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label ><a href="#">Cloud Computing</a></ion-label>
+  </ion-item>
+  <ion-label><a href="tab4">Protection</a></ion-label>
+  <ion-item>
+    
+  </ion-item>
+</ion-list>
+<br />
+&copy; copyright Ben4you Tech 2025 
+  </div>
+  
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. 
+  
+  <ion-button onClick="">Button</ion-button>
+  
+  </ion-content>
+  
+           <ion-tab tab="tab1">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Home</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <ion-button id="ion-action-sheet" onclick="presentActionSheet()">Open</ion-button>
+          
+          <ion-action-sheet trigger="ion-action-sheet" header="Actions" sub-header="That is a message">
+            <ion-action-sheet-button>Option 1</ion-  <!-- Ionic Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /></ion-action-sheet-button>
+            <ion-action-sheet-button>Option 2</ion-action-sheet-button>
+            <ion-action-sheet-button>Cancel</ion-action-sheet-button>
+            <ion-action-sheet-button>Change</ion-action-sheet-button>
+          </ion-action-sheet>
+          
+           <h2 style="color:#876" class=" font-bold mb-2 text-2xl">Programing Skills</h2> <br>
+          <p>This is what you see, when someone was at school and know what they would have as computer Skills.The place is what ina telling hose people to stop thinkng about and mnow tat they are violating my private property laws and privay laws.</p>
+          
+          <p>That is to let people know what is happening and what was happening in this world and some countries. </p>
+        
+          <a href=".ion-padding">Click on the  link</a>
+          
+          <br>
+          
+       <!--    buttons and buttons radios
+       <ion-button id="buttonToFocus" fill="outline">Button</ion-button>
+           <ion-radio-group value="a">
+             <ion-radio id="radioToFocus" value="a">Radio</ion-radio>
+           </ion-radio-group>
+           
+           <br />
+           <ion-button onClick="focusElement('#buttonToFocus')">Button</ion-button>
+           <ion-button onClick="focusElement('#radioToFocus')">Focus Radio</ion-button> <br /><br /> --> 
+         <p>This is content of radio buttons and buttons</p>
+          <br>
+          
+          
+<ion-header>
+  <ion-toolbar>
+   <!-- <ion-title>Example</ion-title>-->
+  </ion-toolbar>
+</ion-header>
+<!--
+<ion-content color="light">-->
+  <ion-list inset="true">
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Get eggs"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Get milk"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Take out compost"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Pick up dry cleaning"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Call mom"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Order more dog food"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+      <ion-input aria-label="Task name" value="Think of new tasks for this demo"></ion-input>
+    </ion-item>
+  </ion-list>
+<!--</ion-content>-->
+
+<!--
+
+<ion-item>
+  <ion-input label="Default Input" placeholder="Enter text"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-input label="Fixed Input" label-placement="fixed" placeholder="Enter text"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-input label="Stacked Input" label-placement="stacked" placeholder="Enter text"></ion-input>
+</ion-item> -->
+
+<ion-item>
+  <ion-input label="Full Name" label-placement="fixed" placeholder="Enter Your Name"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-select label="Select a place" placeholder="Make a Selection">
+    <ion-select-option value="dlm">Delmas</ion-select-option>
+    <ion-select-option value="nes">Petion Ville</ion-select-option>
+    <ion-select-option value="n64">Tabarre</ion-select-option>
+    <ion-select-option value="ps">Carrefour</ion-select-option>
+    <ion-select-option value="genesis">Port-au-Prince</ion-select-option>
+    <ion-select-option value="saturn">Port-au-Ending</ion-select-option>
+    <ion-select-option value="snes">La Mouthing</ion-select-option>
+  </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-toggle class="themeToggle">
+    <div>Dark Mode</div>
+  </ion-toggle>
+</ion-item>
+
+<ion-item>
+  <ion-checkbox>
+    <div><a href="">Terms and Conditions</a></div>
+  </ion-checkbox>
+</ion-item>
+
+<!--
+<ion-item>
+  <ion-range label-placement="start">
+    <div slot="label">Range</div>
+  </ion-range>-->
+</ion-item>
+
+<br>
+
+
+<!--
+<div class="container">
+  <ion-button id="open-action-sheet">Open</ion-button>
+  <ion-action-sheet
+    trigger="open-action-sheet"
+    header="Example header"
+    sub-header="Example subheader"
+  ></ion-action-sheet>
+</div>
+
+<script>
+  var actionSheet = document.querySelector('ion-action-sheet');
+
+  actionSheet.buttons = [
+    {
+      text: 'Delete',
+      role: 'destructive',
+      data: {
+        action: 'delete',
+      },
+    },
+    {
+      text: 'Share',
+      data: {
+        action: 'share',
+      },
+    },
+    {
+      text: 'Cancel',
+      role: 'cancel',
+      data: {
+        action: 'cancel',
+      },
+    },
+  ];
+
+  actionSheet.addEventListener('ionActionSheetDidDismiss', (event) => {
+    console.log(JSON.stringify(event.detail, null, 2));
+  });
+</script>-->
+
+<!--The button action script-->
+
+<!--<div class="container">
+  <ion-button id="open-action-sheet">Open</ion-button >
+  <ion-action-sheet
+    trigger="open-action-sheet"
+    header="Example header"
+    sub-header="Example subheader"
+  ></ion-action-sheet>
+</div>-->
+
+<ion-button onclick="presentActionSheet()">Open</ion-button>
+
+
+<script>
+  async function presentActionSheet() {
+    const actionSheet = document.createElement('ion-action-sheet');
+    actionSheet.header = 'Actions';
+    actionSheet.subheader='That is a sub message';
+    actionSheet.buttons = [
+      {
+        text: 'Delete',
+        role: 'destructive',
+        data: {
+          action: 'delete',
+        },
+      },
+      {
+        text: 'Share',
+        data: {
+          action: 'share',
+        },
+      },
+      {
+        text: 'Cancel',
+        role: 'cancel',
+        data: {
+          action: 'cancel',
+        },
+      },
+    ];
+
+    document.body.appendChild(actionSheet);
+    await actionSheet.present();
+  }
+</script>
+
+
+
+        </ion-content>
+           </ion-tab>
+           
+     <ion-tab tab="tab2">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Hosting and Cloud Network</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list inset="true">
+            
+     <ion-item>
+    <ion-input type="text" label-placement="stacked" label="Name" placeholder="Name" clear-input="true">
+      <ion-icon slot="start" name="document" aria-hidden="true"></ion-icon>
+    </ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input label-placement="stacked" label="Email" placeholder="email@domain.com">
+      <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+      <ion-button fill="clear" slot="end" aria-label="Show/hide">
+        <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+      </ion-button>
+    </ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input type="password" label-placement="stacked" label="Password" placeholder="Password">
+      <ion-icon slot="start" name="globe"></ion-icon>
+      <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+    </ion-input>
+  </ion-item>
+          
+          <!--  <ion-item>
+              <ion-input label="First Name"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input label="Last Name"></ion-input>
+            </ion-item>-->
+           <!-- <ion-item>
+              <ion-toggle class="themeToggle">
+                <ion-label>Change Theme to Dark Mode</ion-label>
+                <ion-note color="medium">Write your comment</ion-note>
+              </ion-toggle>
+            </ion-item>-->
+              <!--Toggle for mode change-->
+            <ion-item>
+              <ion-toggle class="themeToggle">
+                <ion-label>Change Theme to Dark Mode</ion-label>
+                <ion-note color="medium">Unsubscribe at any time</ion-note>
+            </ion-item>
+            
+            <script type="javascript">
+              import("@/js/main.js");
+              let dcl = document.getElementsByClassName('.themeToggle');
+              if(!true){
+                presentAlert("The work","speaking","This is a meassage");
+              }else{
+                presentM();
+              }
+              
+            </script>
+            
+            <ion-item>
+              <ion-button aria-label="Favorite">
+  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+  
+</ion-button>
+
+<ion-icon name="heart" aria-hidden="true"></ion-icon>
+
+<ion-avatar>
+  <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+</ion-avatar>
+            </ion-item>
+        <br><br>
+            <ion-chip>
+  <ion-avatar>
+    <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+  </ion-avatar>
+  <ion-label>Chip Avatar</ion-label>
+</ion-chip>
+          
+             <ion-item>
+           
+          <!--The new toggle will be ahowing somthing-->
+          <!--<ion-toggle class="themToggle">
+            <ion-label>
+              Show Other Notification</ion-label>
+            <ion-note color="medium">
+              Subscribe in our youtube page
+            </ion-note>
+          </ion-toggle>-->
+              
+            </ion-item>
+          </ion-list>
+       
+          <ion-list inset="true">
+            <ion-item>
+              <ion-textarea label="Comments" label-placement="floating" rows="5"></ion-textarea>
+            </ion-item>
+          </ion-list>
+          <!--The list is to show-->
+          <ion-list inset="true">
+            <ion-item>
+              <ion-textarea label="Text"
+              label-placement="floating" rows="10">
+              </ion-textarea>
+              <ion-note>
+               Put or write you text and comment 
+              </ion-note>
+            </ion-item>
+          </ion-list>
+
+          <ion-note color="medium" class="ion-margin-horizontal block">
+            Your comments will be kept anonymous and will only be used to improve the reliability of our products.
+             <br><br>
+             <a href="#hom">Click on the link</a>
+            
+          </ion-note><br>
+        <!--  <ion-list inset="true">
+            <ion-item>
+              <ion-input type="text" label="First Name" aria-placeholder="First Name" clear-input="true"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input type="password" label="Password" aria-placeholder="Password"></ion-input>
+            </ion-item>
+          </ion-list>-->
+          
+  <ion-list>
+   
+   <!-- 
+  <ion-item>
+    <ion-input type="text" label-placement="stacked" label="Name" placeholder="Name" clear-input="true">
+      <ion-icon slot="start" name="document" aria-hidden="true"></ion-icon>
+    </ion-input>
+    </ion-item>
+    
+    <ion-item>
+    <ion-input label-placement="stacked" label="Email" placeholder="email@domain.com">
+      <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+      <ion-button fill="clear" slot="end" aria-label="Show/hide">
+        <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+      </ion-button>
+    </ion-input>
+    </ion-item>
+    
+    <ion-item>
+    <ion-input type="password" label-placement="stacked" label="Password" placeholder="Password">
+      <ion-icon slot="start" name="globe"></ion-icon>
+      <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+    </ion-input>
+  </ion-item>-->
+  
+  <!--
+    <ion-item>
+    <!--ion-input toggle
+    <ion-input type="password" label="Password" value="NeverGonnaGiveYouUp">
+      <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+    </ion-input>
+  </ion-item>-->
+
+</ion-list>
+
+<!--
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Example</ion-title>
+  </ion-toolbar>
+</ion-header>-->
+<!--<ion-content color="light">-->
+  <ion-list inset="true">
+    <ion-item button="true">
+      <ion-icon color="danger" slot="start" name="list-circle" size="large"></ion-icon>
+      <ion-label>General</ion-label>
+      <ion-note slot="end">6</ion-note>
+    </ion-item>
+    <ion-item button="true">
+      <ion-icon color="tertiary" slot="start" name="list-circle" size="large"></ion-icon>
+      <ion-label>Shopping</ion-label>
+      <ion-note slot="end">15</ion-note>
+    </ion-item>
+    <ion-item button="true">
+      <ion-icon color="success" slot="start" name="list-circle" size="large"></ion-icon>
+      <ion-label>Cleaning</ion-label>
+      <ion-note slot="end">3</ion-note>
+    </ion-item>
+    <ion-item button="true">
+      <ion-icon color="warning" slot="start" name="list-circle" size="large"></ion-icon>
+      <ion-label>Reminders</ion-label>
+      <ion-note slot="end">8</ion-note>
+    </ion-item>
+  </ion-list>
+  
+  <ion-list inset="true">
+    <ion-item button="true" detail="false">
+      <div class="unread-indicator-wrapper" slot="start">
+        <div class="unread-indicator"></div>
+      </div>
+      <ion-label>
+        <strong>Rick Astley</strong>
+        <ion-text>Never Gonna Give You Up</ion-text><br />
+        <ion-note color="medium" class="ion-text-wrap">
+          Never gonna give you up Never gonna let you down Never gonna run...
+        </ion-note>
+      </ion-label>
+      <div class="metadata-end-wrapper" slot="end">
+        <ion-note color="medium">06:11</ion-note>
+        <ion-icon color="medium" name="chevron-forward"></ion-icon>
+      </div>
+    </ion-item>
+    <ion-item button="true" detail="false">
+      <div class="unread-indicator-wrapper" slot="start"></div>
+      <ion-label>
+        <strong>Ionitron</strong>
+        <ion-text>I have become sentient</ion-text><br />
+        <ion-note color="medium" class="ion-text-wrap">That is all.</ion-note>
+      </ion-label>
+      <div class="metadata-end-wrapper" slot="end">
+        <ion-note color="medium">03:44</ion-note>
+        <ion-icon color="medium" name="chevron-forward"></ion-icon>
+      </div>
+    </ion-item>
+    <ion-item button="true" detail="false">
+      <div class="unread-indicator-wrapper" slot="start">
+        <div class="unread-indicator"></div>
+      </div>
+      <ion-label>
+        <strong>Steam</strong>
+        <ion-text>Game Store Sale</ion-text><br />
+        <ion-note color="medium" class="ion-text-wrap">
+          That game you added to your wish list 2 years ago is now on sale!
+        </ion-note>
+      </ion-label>
+      <div class="metadata-end-wrapper" slot="end">
+        <ion-note color="medium">Yesterday</ion-note>
+        <ion-icon color="medium" name="chevron-forward"></ion-icon>
+      </div>
+    </ion-item>
+    <ion-item button="true" detail="false">
+      <div class="unread-indicator-wrapper" slot="start"></div>
+      <ion-label>
+        <strong>Ionic</strong>
+        <ion-text>Announcing Ionic 7.0</ion-text><br />
+        <ion-note color="medium" class="ion-text-wrap">This version is one more than Ionic 6!</ion-note>
+      </ion-label>
+      <div class="metadata-end-wrapper" slot="end">
+        <ion-note color="medium">Yesterday</ion-note>
+        <ion-icon color="medium" name="chevron-forward"></ion-icon>
+      </div>
+    </ion-item>
+  </ion-list>
+<!--</ion-content>-->
+
+<style>
+  .unread-indicator {
+    background: var(--ion-color-primary);
+    
+    width: 10px;
+    height: 10px;
+    
+    border-radius: 100%;
+    
+    position: absolute;
+    
+    inset-inline-start: 12px;
+    top: 12px;
+  }
+  
+  .metadata-end-wrapper {
+    position: absolute;
+    
+    top: 10px;
+    inset-inline-end: 10px;
+    
+    font-size: 0.8rem;
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  ion-label strong {
+    display: block;
+    
+    max-width: calc(100% - 60px);
+    
+    overflow: hidden;
+    
+    text-overflow: ellipsis;
+  }
+  
+  ion-label ion-note {
+    font-size: 0.9rem;
+  }
+</style>
+
+  </ion-content>
+      </ion-tab>
+      
+      <ion-tab tab="tab3">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Setting</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-app>
+  <ion-nav root="page-one"></ion-nav>
+</ion-app>
+
+<script>
+  class PageOne extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = `
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Back Button</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <h1>Page One</h1>
+        <p>Navigate to the next page to see the back button.</p>
+        <ion-nav-link router-direction="forward" component="page-two">
+          <ion-button>Navigate</ion-button>
+          <ion-button>Mesye Vendeur a</ion-button>
+          <a href="#MVD">MVD</a>
+        </ion-nav-link>
+      </ion-content>
+    `;
+    }
+  }
+  
+  class PageTwo extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = `
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+          <ion-title>Back Button</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <h1>Page Two</h1>
+        <p>Use the back button to navigate to the previous page.Moun ji itlize sa tale a pou fe pase mekontantman li a.Lap ka we sa to ye e lap fe okfintou.</p>
+      </ion-content>
+    `;
+    }
+  }
+  
+  class Tab2 extends HTMLElement{
+    connectedCallback(){
+      this.innerHTML = `
+      <ion-header>
+      
+      <ion-toolbar>
+      <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-buttons>
+      <ion-title>Back</ion-title>
+      </ion-toolbar>
+    </ion-header>
+      
+      `;
+    }
+  }
+  
+  customElements.define('page-one', PageOne);
+  customElements.define('page-two', PageTwo);
+</script>
+        </ion-content>
+        <ion-content>
+          <h2 style="margin:30px">Setting</h2>
+          
+      <ion-chip>
+  <ion-avatar>
+    <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+  </ion-avatar>
+  <ion-label>Chip Avatar</ion-label>
+  </ion-chip>
+  <!--
+  <ion-item>
+  <ion-avatar slot="start">
+    <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+  </ion-avatar>
+  <ion-label>Item Avatar</ion-label>
+</ion-item>
+
+<!-- ion avatar
+
+<ion-avatar>
+  <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+</ion-avatar>
+  <!-- Ionicon ans ion-icon styling
+  
+  <ion-icon name="logo-ionic"></ion-icon>
+<ion-icon name="logo-ionic" size="large"></ion-icon>
+<ion-icon name="logo-ionic" color="primary"></ion-icon>
+<ion-icon name="logo-ionic" size="large" color="primary"></ion-icon>
+
+<br>
+
+<!-- icon the is inteative and disay a label
+<ion-icon name="heart" aria-label="Favorite" color="primary"></ion-icon>
+
+
+        <!-- show a button with a label that hide rhe icon
+        <ion-button aria-label="Favorite">
+          <ion-icon name="heart" aria-hidden="true"></ion-icon>
+        </ion-button>
+        
+        <ion-input label="Solid input" label-placement="floating" fill="solid" placeholder="Enter text"></ion-input>
+        
+        <br />
+        
+        <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+        
+        
+        <ion-list>
+          <ion-item>
+            <ion-textarea label="Regular textarea" placeholder="Type something here"></ion-textarea>
+          </ion-item>
+          <ion-item>
+            <ion-textarea readonly="true" label="Readonly textarea" placeholder="Can't edit this"></ion-textarea>
+          </ion-item>
+          <ion-item>
+            <ion-textarea disabled="true" label="Disabled textarea" placeholder="Can't type here"></ion-textarea>
+          </ion-item>
+        </ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-textarea label-placement="floating" value="Lorem Ipsum">
+      <div slot="label">Comments <ion-text color="danger">(Required)</ion-text></div>
+    </ion-textarea>
+  </ion-item>
+</ion-list>
+
+
+<ion-textarea
+  fill="solid"
+  label="Email"
+  label-placement="floating"
+  helper-text="Enter a valid email"
+  error-text="Invalid email"
+></ion-textarea>
+
+<script>
+  const textarea = document.querySelector('ion-textarea');
+
+  textarea.addEventListener('ionInput', (event) => validate(event));
+  textarea.addEventListener('ionBlur', () => markTouched());
+
+  const validateEmail = (email) => {
+    return email.match(
+      /^(?=.{1,254}$)(?=.{1,64}@)[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+    );
+  };
+
+  const validate = (event) => {
+    const value = event.target.value;
+
+    textarea.classList.remove('ion-valid');
+    textarea.classList.remove('ion-invalid');
+
+    if (value === '') return;
+
+    validateEmail(value) ? textarea.classList.add('ion-valid') : textarea.classList.add('ion-invalid');
+  };
+
+  const markTouched = () => {
+    textarea.classList.add('ion-touched');
+  };
+</script>
+
+-->
+
+<ion-list>
+  <ion-item>
+    <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
+    <ion-label>Airplane Mode</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-icon aria-hidden="true" name="wifi" slot="start"></ion-icon>
+    <ion-label>Wi-Fi</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-icon aria-hidden="true" name="bluetooth" slot="start"></ion-icon>
+    <ion-label>Bluetooth</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-icon aria-hidden="true" name="call" slot="start"></ion-icon>
+    <ion-label>Cellular</ion-label>
+  </ion-item>
+</ion-list>
+
+<br /> <br />
+<!--icon item ans avatar-->
+
+<ion-list>
+  <ion-item>
+    <ion-avatar aria-hidden="true" slot="start">
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label>Huey</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-avatar aria-hidden="true" slot="start">
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label>Dewey</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-avatar aria-hidden="true" slot="start">
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label>Louie</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-avatar aria-hidden="true" slot="start">
+      <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label>Fooie</ion-label>
+  </ion-item>
+</ion-list>
+
+<br> <br>
+
+<!--
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Example</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="light">
+  <ion-list inset="true">
+    <ion-item-sliding>
+      <ion-item button="true">
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Rick Astley</ion-label>
+      </ion-item>
+      <ion-item-options slot="end">
+        <ion-item-option color="warning">
+          <ion-icon slot="icon-only" name="pin"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="tertiary">
+          <ion-icon slot="icon-only" name="share"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="danger" expandable="true">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    
+    <ion-item-sliding>
+      <ion-item button="true">
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Leeroy Jenkins</ion-label>
+      </ion-item>
+      <ion-item-options slot="end">
+        <ion-item-option color="warning">
+          <ion-icon slot="icon-only" name="pin"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="tertiary">
+          <ion-icon slot="icon-only" name="share"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="danger" expandable="true">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    
+    <ion-item-sliding>
+      <ion-item button="true">
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Ionitron</ion-label>
+      </ion-item>
+      <ion-item-options slot="end">
+        <ion-item-option color="warning">
+          <ion-icon slot="icon-only" name="pin"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="tertiary">
+          <ion-icon slot="icon-only" name="share"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="danger" expandable="true">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    
+    <ion-item-sliding>
+      <ion-item button="true">
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Wall-E</ion-label>
+      </ion-item>
+      <ion-item-options slot="end">
+        <ion-item-option color="warning">
+          <ion-icon slot="icon-only" name="pin"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="tertiary">
+          <ion-icon slot="icon-only" name="share"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="danger" expandable="true">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    
+    <ion-item-sliding>
+      <ion-item button="true">
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Cortana</ion-label>
+      </ion-item>
+      <ion-item-options slot="end">
+        <ion-item-option color="warning">
+          <ion-icon slot="icon-only" name="pin"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="tertiary">
+          <ion-icon slot="icon-only" name="share"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="danger" expandable="true">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    
+    <ion-item-sliding>
+      <ion-item button="true">
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Bender</ion-label>
+      </ion-item>
+      <ion-item-options slot="end">
+        <ion-item-option color="warning">
+          <ion-icon slot="icon-only" name="pin"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="tertiary">
+          <ion-icon slot="icon-only" name="share"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="danger" expandable="true">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    
+    <ion-item-sliding>
+      <ion-item button="true">
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>BB-8</ion-label>
+      </ion-item>
+      <ion-item-options slot="end">
+        <ion-item-option color="warning">
+          <ion-icon slot="icon-only" name="pin"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="tertiary">
+          <ion-icon slot="icon-only" name="share"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="danger" expandable="true">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
+-->
+
+<!--To do tasking selecting what task has been done-->
+
+
+<ion-item>
+  <ion-select label="Select" placeholder="Make a Selection">
+    <ion-select-option value="">No problems in my head</ion-select-option>
+    <ion-select-option value="nejwjnw">Delmas</ion-select-option></ion-select-option>
+    <ion-select-option value="jwjwj">Fokou</ion-select-option>
+    <ion-select-option value="nenejne">Fprt</ion-select-option>
+    <ion-select-option value="nejenej">PHpr</ion-select-option>
+    <ion-select-option value="jenejeje">Wrksn</ion-select-option>
+    <ion-select-option value="Jsjw">Jeijenj</ion-select-option>
+    <ion-select-iption value="mth">Mourh moving and Tongue moving</ion-select-iption>
+  </ion-select>
+</ion-item>
+
+<br> <br>
+
+
+  </ion-content>
+  
+  
+  
+  
+  </ion-tab>
+  
+  
+  <ion-tab tab="tab4">
+    <ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form (ngSubmit)="login()">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input [(ngModel)]="email" name="email" type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input [(ngModel)] placeholder="password" name="password" type="password">
+        </ion-icon>
+<ion-input-password-toggle slot="end"></ion-input-password-toggle>
+      </ion-input>
+    </ion-item>
+    <ion-button expand="full" type="submit">Login</ion-button>
+  </form>
+</ion-content>
+    
+  </ion-tab>
+  
+  
+  
+  <ion-tab tab="tab5">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title></ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-content>
+      <br>
+      <h3>Containers</h3>
+      <ion-item-group>
+  <ion-item-divider>
+    <ion-label>A</ion-label>
+  </ion-item-divider>
+  
+  <ion-item>
+    <ion-label>Angola</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Argentina</ion-label>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label>Armenia</ion-label>
+  </ion-item>
+</ion-item-group>
+
+<ion-item-group>
+  <ion-item-divider>
+    <ion-label>B</ion-label>
+  </ion-item-divider>
+  
+  <ion-item>
+    <ion-label>Bangladesh</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Belarus</ion-label>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label>Belgium</ion-label>
+  </ion-item>
+</ion-item-group>
+
+<h4>Container List</h4>
+
+<ion-item-group>
+  <ion-item-divider>
+    <ion-label> Fruits </ion-label>
+  </ion-item-divider>
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label> Grapes </ion-label>
+    </ion-item>
+    <ion-item-options>
+      <ion-item-option> Favorite </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label> Apples </ion-label>
+    </ion-item>
+    <ion-item-options>
+      <ion-item-option> Favorite </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  
+  <ion-item-sliding>
+    <ion-item lines="none">
+      <ion-label> Bananas </ion-label>
+    </ion-item>
+    <ion-item-options>
+      <ion-item-option> Favorite </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-item-group>
+
+<ion-item-group>
+  <ion-item-divider>
+    <ion-label> Vegetables </ion-label>
+  </ion-item-divider>
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label> Carrots </ion-label>
+    </ion-item>
+    <ion-item-options>
+      <ion-item-option> Favorite </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label> Broccoli </ion-label>
+    </ion-item>
+    <ion-item-options>
+      <ion-item-option> Favorite </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  
+  <ion-item-sliding>
+    <ion-item lines="none">
+      <ion-label> Celery </ion-label>
+    </ion-item>
+    <ion-item-options>
+      <ion-item-option> Favorite </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-item-group>
+
+<!--The range for an increasing or desxrwasing numbers-->
+
+<ion-range aria-label="Custom range" value="50" pin="true"></ion-range>
+
+
+<br><br>
+
+    </ion-content>
+  </ion-tab>
+  
+  
+      
+      
+      <!--Information tab->
+      
+      
+           
+        
+       <!--  <ion-content class="ion-padding">
+           <h2  class="text-center text-2xl font-bold mb-2" style="color:#876">The web content</h2>
+           <p style="color:darkgreen">That is a work i that is being done to mae people know what programi skills are and what we can do to make it work for our help</p> <br>
+           <p style="color:darkgreen">
+             This is to make it get where it has to ve getting ao they can be useing it.
+           </p>
+           
+          <ion-button id="ion-action-sheet">Choose your option</ion-button>
+
+          <ion-action-sheet trigger="ion-action-sheet" header="Choices">
+            
+            <ion-action-sheet-button>Option 1</ion-action-sheet-button>
+            <ion-action-sheet-button>Option 2</ion-action-sheet-button>
+            <ion-action-sheet-button>Cancel</ion-action-sheet-button>
+            <ion-action-sheet-button>Change</ion-action-sheet-button>
+          </ion-action-sheet>
+           
+         </ion-content> 
+        
+      </ion-tab>
+     
+    
+    
+    
+</div>
+
+<!--
+      <ion-tab tab="tab1">
+        <ion-header color="secondary">
+          <ion-toolbar>
+            <ion-title>Home</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          
+           <h2 style="color:#876" class=" font-bold mb-2 text-2xl">Programing Skills</h2> <br>
+          <p>This is what you see, when someone was at school and know what they would have as computer Skills.The place is what ina telling hose people to stop thinkng about and mnow tat they are violating my private property laws and privay laws.</p>
+          
+          <p>That is to let people know what is happening and what was happening in this world and some countries. </p>
+        
+          <a href=".ion-padding">Click on the  link</a>
+          
+          <br>
+          
+           <ion-button id="buttonToFocus" fill="outline">Button</ion-button>
+           <ion-radio-group value="a">
+             <ion-radio id="radioToFocus" value="a">Radio</ion-radio>
+           </ion-radio-group>
+           
+           <br />
+           <ion-button onClick="focusElement('#buttonToFocus')">Button</ion-button>
+           <ion-button onClick="focusElement('#radioToFocus')">Focus Radio</ion-button> <br /><br />
+         <p>This is content of radio buttons and buttons</p>
+        </ion-content>
+        
+       <!--  <ion-content class="ion-padding">
+           <h2  class="text-center text-2xl font-bold mb-2" style="color:#876">The web content</h2>
+           <p style="color:darkgreen">That is a work i that is being done to mae people know what programi skills are and what we can do to make it work for our help</p> <br>
+           <p style="color:darkgreen">
+             This is to make it get where it has to ve getting ao they can be useing it.
+           </p>
+           
+          <ion-button id="ion-action-sheet">Choose your option</ion-button>
+
+          <ion-action-sheet trigger="ion-action-sheet" header="Choices">
+            
+            <ion-action-sheet-button>Option 1</ion-action-sheet-button>
+            <ion-action-sheet-button>Option 2</ion-action-sheet-button>
+            <ion-action-sheet-button>Cancel</ion-action-sheet-button>
+            <ion-action-sheet-button>Change</ion-action-sheet-button>
+          </ion-action-sheet>
+           
+         </ion-content> 
+        
+      </ion-tab>-->
+
+<!--
+     <ion-tab tab="tab2">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Information</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <h1 class="text-center text-2xl font-bold mb-2">Information Page</h1>
+          <p>This page contains some informational content. Ensure that the content fits properly and scrolls if necessary.</p>
+          <p> <br>
+            The world is to make people know they should stop bothering me,and stop thinking about me everywhere they are.
+          </p>
+          <br />
+          
+          <ion-input type="text"></ion-input>
+          
+          <ion-button id="buttonToFocus" onClick="presentM()" fill = "outline">Purchase</ion-button>  <br />
+          
+          <!--Alert
+          <ion-button onClick="presentAlert()" fill="outline">Click to see the information</ion-button>
+          
+          <ion-button onClick="presentConfirm()">Click to see the message detailed</ion-button> <br>
+   <br />
+   <div>
+     This is a divider
+   </div><br>
+   
+   <ion-content fixed-slot-placement="before">
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-list></ion-list>
+  <ion-infinite-scroll>
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+
+<script>
+  const infiniteScroll = document.querySelector('ion-infinite-scroll');
+  infiniteScroll.addEventListener('ionInfinite', (event) => {
+    setTimeout(() => {
+      generateItems();
+      event.target.complete();
+    }, 500);
+  });
+  
+  const list = document.querySelector('ion-list');
+  
+  function generateItems() {
+    const count = list.childElementCount + 1;
+    const total = count + 50;
+    for (let i = count; i < total; i++) {
+      const el = document.createElement('ion-item');
+      el.setAttribute('button', '');
+      
+      const avatar = document.createElement('ion-avatar');
+      avatar.slot = 'start';
+      const img = document.createElement('img');
+      img.src = `/lkf/IMG_0746.webp/80/80?random=${i}`;
+      img.alt = 'Avatar';
+      
+      avatar.appendChild(img);
+      el.appendChild(avatar);
+      
+      const text = document.createElement('ion-label');
+      text.innerText = `Item ${i}`;
+      
+      el.appendChild(text);
+      
+      list.appendChild(el);
+    }
+  }
+  
+  generateItems();
+</script>
+   
+   
+  </ion-content>
+</ion-tab>-->
+ 
+
+       </ion-tabs>
+  </ion-app>
+  <script src="/js/main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript" src="cdn_modules/ionic-framework@2.0.0-beta.2/ionic.min.js"></script>
+
+</body>
+
 </html>
+
